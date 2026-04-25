@@ -4,6 +4,7 @@ body {
   background-color: #f5f5dc;
 }
 
+
 /* Navbar */
 header {
   display: flex;
@@ -188,4 +189,32 @@ button:hover{
 .toast.show{
     opacity:1;
     visibility:visible;
+}
+
+@media (max-width: 768px){
+
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side,
+    .right-side{
+        width: 100%;
+    }
+
+    form{
+        max-width: 90%;
+    }
+
+    img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    h1{
+        font-size: 28px;
+        text-align: center;
+    }
 }
