@@ -198,8 +198,8 @@ button:hover{
         align-items: center;
     }
 
-    .left-side,
-    .right-side{
+    .tex,
+    .Contact-box{
         width: 100%;
     }
 
@@ -213,7 +213,7 @@ button:hover{
         height: auto;
     }
 
-    h1{
+    h2{
         font-size: 28px;
         text-align: center;
     }
