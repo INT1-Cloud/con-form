@@ -23,3 +23,20 @@ function showToast(event){
 
     event.target.reset();
 }
+function copyText(text) {
+  navigator.clipboard.writeText(text);
+
+  showMessage("✓ Copied to clipboard");
+}
+
+function showMessage(message) {
+  const toast = document.getElementById("toast");
+
+  toast.innerHTML = message;
+
+  toast.classList.add("show");
+
+  setTimeout(function () {
+    toast.classList.remove("show");
+  }, 2500);
+}
