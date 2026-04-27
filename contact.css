@@ -69,7 +69,7 @@ header input {
   z-index: 999;
 }
 
-.contact-section {
+.middle-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -77,23 +77,23 @@ header input {
   padding: 40px;
 }
 
-.tex {
+.left {
   flex: 1;
   padding-top: 30px;
 }
 
-.like {
+.frnt-text{
   color: #8b4513;
   font-size: 32px;
   font-weight: 700;
 }
 
-.line {
+.frnt-line{
   background-color: #000000;
   width: 100%;
   max-width: 500px;
   height: 7px;
-  box-shadow: 2px 2px 6px black;
+  box-shadow: 2px 2px 6px #000000;
   border-radius: 5px;
 }
 
@@ -113,30 +113,33 @@ header input {
 
 .icon {
   font-size: 28px;
+  color: rgb(0, 0, 0);
   width: 35px;
   cursor: pointer;
+  background: fixed;
 }
 
 .email {
   font-weight: bold;
-  color: #df730e;
+  color: #EC7D3C;
   font-size: 19px;
   cursor: pointer;
 }
 
-img {
+.contact-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 660px;
+  margin-right: 200px;
   height: auto;
 }
 
-.right-side {
+.right{
   flex: 1;
   max-width: 430px;
   margin-top: 30px;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  
 }
 
 .input-box,
@@ -148,6 +151,7 @@ textarea {
   border: 1px solid #3a3a3a;
   border-radius: 8px;
   font-size: 14px;
+  box-shadow: 0px 0px 0.9px black;
 }
 
 .input-box {
@@ -157,10 +161,11 @@ textarea {
 .input-box:hover,
 textarea:hover {
   border: 1.3px solid #0f0f0f;
+  box-shadow: 0px 0px 1.2px black;
 }
 
 .label-box {
-  color: #8B4513;
+  color: #db611b;
   line-height: 3rem;
   font-weight: bold;
   font-size: 17px;
@@ -171,14 +176,15 @@ textarea {
   resize: none;
 }
 
-button {
+.snd-btn {
   width: 100%;
   padding: 14px;
   border: none;
   border-radius: 8px;
-  background: #df730e;
+  background: #EC7D3C;
   color: white;
   font-size: 18px;
+  font-weight: 800px;
   cursor: pointer;
 }
 
@@ -220,24 +226,24 @@ button:hover {
     font-size: 18px;
   }
 
-  .contact-section {
+  .middle-section {
     flex-direction: column;
     gap: 25px;
     padding: 25px;
     align-items: center;
   }
 
-  .tex {
+  .left{
     width: 100%;
     padding-top: 20px;
   }
 
-  .like {
+  .frnt-text{
     font-size: 24px;
     text-align: center;
   }
 
-  .line {
+  .frnt-line{
     height: 5px;
     max-width: 100%;
   }
@@ -264,7 +270,7 @@ button:hover {
     margin: 20px auto;
   }
 
-  .right-side {
+  .right{
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -273,11 +279,11 @@ button:hover {
   }
 
   .label-box {
-    font-size: 15px;
+    font-size: 25px;
     line-height: 2.5rem;
   }
 
-  button {
+  .snd-btn {
     font-size: 16px;
   }
 
@@ -288,4 +294,12 @@ button:hover {
     text-align: center;
     font-size: 15px;
   }
+}
+footer{
+  background-color: #8b4513;
+  text-align: center;
+  margin: auto;
+ padding: 10px;
+ color: white;
+ font-size: larger;
 }
