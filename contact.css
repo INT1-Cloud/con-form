@@ -188,7 +188,7 @@ textarea {
   cursor: pointer;
 }
 
-button:hover {
+.snd-btn:hover {
   background: #c86409;
 }
 
