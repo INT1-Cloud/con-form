@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Morning Bites</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -28,21 +28,25 @@
 
   <div id="overlay" class="overlay" onclick="closeMenu()"></div>
 
-  <div class="contact-section main-container">
+  <div class="middle-section">
 
-    <div class="tex">
-      <div class="like">We Would Like To Hear From You!</div>
-      <div class="line"></div>
+    <div class="left">
+      <div class="frnt-text">We Would Like To Hear From You!</div>
+      <div class="frnt-line"></div>
 
       <div class="Contact-box">
         <div class="contact-item">
-          <i class="icon">✉</i>
-          <span class="email">info.contact.com</span>
+          <i class="icon"onclick="copyText('Morningbites@contact.com')"><i class="fa-solid fa-at"></i></i>
+          <span class="email">Morningbites@contact.com</span>
         </div>
 
         <div class="contact-item">
-          <i class="icon">☎</i>
-          <span class="email">17221</span>
+          <i class="icon"onclick="copyText('Morningbites@contact.com')"><i class="fas fa-phone"></i></i>
+          <span class="email">16992</span>
+        </div>
+        <div class="contact-item">
+          <i class="icon"><i class="fa-solid fa-location-arrow"></i></i>
+          <span class="email" >Capital University</span>
         </div>
       </div>
 
@@ -53,7 +57,7 @@
       >
     </div>
 
-    <div class="right-side">
+    <div class="right">
       <form onsubmit="showToast(event)">
         <label class="label-box">Name</label>
         <input type="text" class="input-box" required>
@@ -67,12 +71,16 @@
         <label class="label-box">How can we help you</label>
         <textarea placeholder="Describe/etc.." required></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" class="snd-btn">Send Message</button>
       </form>
     </div>
 
   </div>
-
   <div id="toast" class="toast">✓ Submitted Successfully</div>
+  <footer>© 2026 Morning Bites. All rights reserved 
+    <div><i class="fa-brands fa-instagram">    </i><i class="fa-brands fa-facebook"> </i><i class="fa-brands fa-twitter"></i></div>
+  </footer>
 
-  <script src="script.js"></script>
+  <script src="contact.js"></script>
+  <script src="https://kit.fontawesome.com/467c6f59e3.js" crossorigin="anonymous"></script>
+  </body>
